@@ -1,6 +1,6 @@
 <template>
   <div class="lead">
-    <img src="../assets/logo.png" class="logo" alt="Bolt Logo" />
+    <img src="../assets/logo-full.svg" class="logo" alt="Bolt Logo" />
     <p class="desc">
       A fast, lightweight, and secure chat
       <a
@@ -29,6 +29,13 @@ export default class Lead extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+.lead {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 30vh;
+  left: 50%;
+}
+
 .logo {
   width: 350px;
 }
