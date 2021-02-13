@@ -21,16 +21,16 @@
         </svg>
       </a>
       <li class="nav-item">
-        <a href="/" class="nav-link">Home</a>
+        <router-link to="/" class="nav-link">Home</router-link>
       </li>
       <li class="nav-item">
-        <a href="/about" class="nav-link">About</a>
+        <router-link to="/about" class="nav-link">About</router-link>
       </li>
       <li class="nav-item">
-        <a href="/install" class="nav-link">Install</a>
+        <router-link to="/install" class="nav-link">Install</router-link>
       </li>
       <li class="nav-item">
-        <a href="/docs" class="nav-link">Docs</a>
+        <router-link to="/docs" class="nav-link">Docs</router-link>
       </li>
     </ul>
   </div>

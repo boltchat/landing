@@ -29,20 +29,14 @@ export default class Lead extends Vue {}
 </script>
 
 <style lang="scss" scoped>
-.lead {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 30vh;
-  left: 50%;
-}
-
 .logo {
-  width: 350px;
+  width: 800px;
 }
 
 .desc {
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 400;
   font-family: "Roboto Mono";
 }
 </style>
