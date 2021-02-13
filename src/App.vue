@@ -1,20 +1,17 @@
 <template>
   <div id="app">
     <navbar></navbar>
-    <lead></lead>
-    <Footer></Footer>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Lead from "./components/Lead.vue";
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 
 @Component({
   components: {
-    Lead,
     Navbar,
     Footer
   }
@@ -36,5 +33,10 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration-style: dotted;
 }
 </style>

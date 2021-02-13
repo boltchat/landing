@@ -44,10 +44,5 @@ export default class Lead extends Vue {}
   margin-top: 25px;
   font-size: 18px;
   font-family: "Roboto Mono";
-
-  a {
-    color: inherit;
-    text-decoration-style: dotted;
-  }
 }
 </style>
