@@ -14,7 +14,7 @@ export default class Footer extends Vue {}
 <style lang="scss" scoped>
 .footer {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%);
   bottom: 0;
   left: 50%;
 }

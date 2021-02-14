@@ -39,4 +39,10 @@ export default class Lead extends Vue {}
   font-weight: 400;
   font-family: "Roboto Mono";
 }
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    max-width: 90vw;
+  }
+}
 </style>
