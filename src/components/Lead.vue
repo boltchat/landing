@@ -1,6 +1,6 @@
 <template>
   <div class="lead">
-    <img src="../assets/logo.png" class="logo" alt="Bolt Logo" />
+    <img src="../assets/logo-full.svg" class="logo" alt="Bolt Logo" />
     <p class="desc">
       A fast, lightweight, and secure chat
       <a
@@ -30,12 +30,19 @@ export default class Lead extends Vue {}
 
 <style lang="scss" scoped>
 .logo {
-  width: 350px;
+  width: 800px;
 }
 
 .desc {
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 400;
   font-family: "Roboto Mono";
+}
+
+@media only screen and (max-width: 850px) {
+  .logo {
+    max-width: 90vw;
+  }
 }
 </style>

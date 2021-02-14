@@ -1,13 +1,22 @@
 <template>
   <div id="app">
-    <!-- TODO: navbar -->
+    <navbar></navbar>
+    <Footer></Footer>
     <router-view />
   </div>
 </template>
 
 <script lang="ts">
-import { Vue } from "vue-property-decorator";
+import { Component, Vue } from "vue-property-decorator";
+import Navbar from "./components/Navbar.vue";
+import Footer from "./components/Footer.vue";
 
+@Component({
+  components: {
+    Navbar,
+    Footer
+  }
+})
 export default class App extends Vue {}
 </script>
 
@@ -19,7 +28,12 @@ export default class App extends Vue {}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 150px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 a {

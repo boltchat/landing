@@ -1,26 +1,6 @@
 <template>
   <div id="app">
     <lead class="lead" />
-    <div class="instructions">
-      <install-instruction
-        os="Arch Linux"
-        type="client"
-        command="yay -S boltchat-client"
-      />
-      <install-instruction
-        os="Docker"
-        type="server"
-        command="docker run -p 3300:3300 --tty boltchat/server:latest"
-      />
-      <span class="more">
-        more can be found
-        <a
-          href="https://github.com/boltchat/bolt/blob/develop/docs/installation.md"
-          target="_blank"
-          >here</a
-        >.
-      </span>
-    </div>
   </div>
 </template>
 
@@ -40,7 +20,10 @@ export default class Home extends Vue {}
 
 <style lang="scss" scoped>
 .lead {
-  margin-bottom: 50px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40vh;
+  left: 50vw;
 }
 
 .instructions {
