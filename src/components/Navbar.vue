@@ -76,7 +76,7 @@ export default class Navbar extends Vue {}
   color: inherit;
   text-decoration-style: dotted;
   line-height: 45px;
-  font-family: "Roboto mono";
+  font-family: "Roboto Mono";
   font-size: 18px;
 }
 

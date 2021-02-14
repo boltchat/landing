@@ -1,6 +1,9 @@
 <template>
   <div class="footer">
-    <p class="copyright">&copy;2021 bolt</p>
+    <p class="copyright">
+      <span class="symbol">&copy;</span>
+      <span class="text">2021 The boltchat Authors</span>
+    </p>
   </div>
 </template>
 
@@ -20,7 +23,11 @@ export default class Footer extends Vue {}
 }
 
 .copyright {
-  font-family: "Roboto mono";
+  font-family: "Roboto Mono";
   font-size: 15px;
+
+  .symbol {
+    font-size: 1.25em;
+  }
 }
 </style>
