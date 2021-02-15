@@ -7,12 +7,10 @@
         command="yay -S boltchat-client"
       />
       <install-instruction
-        v-model="message"
         os="Docker"
         type="server"
         command="docker run -p 3300:3300 --tty boltchat/server:latest"
       />
-      <button type="button" @click="doCopy">Copy!</button>
       <span class="more">
         more can be found
         <a
@@ -28,30 +26,10 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import InstallInstruction from "@/components/InstallInstruction.vue";
-import VueClipboard from "vue-clipboard2";
-
-Vue.use(VueClipboard);
 
 @Component({
   components: {
     InstallInstruction
-  },
-  methods: {
-    doCopy(): void {
-      console.log(this);
-    }
-    //   console.log(this);
-    //   // this.$copyText(this.message).then(
-    //   //   function(e) {
-    //   //     alert("Copied");
-    //   //     console.log(e);
-    //   //   },
-    //   //   function(e) {
-    //   //     alert("Can not copy");
-    //   //     console.log(e);
-    //   //   }
-    //   // );
-    // }
   }
 })
 export default class Install extends Vue {}
