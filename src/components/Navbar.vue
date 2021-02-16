@@ -3,7 +3,7 @@
     <img src="../assets/logo.svg" alt="Bolt logo" class="logo" />
     <ul class="nav-links">
       <a href="">
-        <img src="../assets/menu.svg" alt="Menu" class="menu" />
+        <MenuIcon class="menu" />
       </a>
       <li class="nav-item">
         <router-link to="/" class="nav-link">Home</router-link>
@@ -17,14 +17,22 @@
       <li class="nav-item">
         <router-link to="/docs" class="nav-link">Docs</router-link>
       </li>
+      <li class="nav-item">
+        <a href="https://github.com/boltchat/bolt" class="github-icon">
+          <GithubIcon />
+        </a>
+      </li>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
+import { GithubIcon, MenuIcon } from "vue-feather-icons";
 
-@Component
+@Component({
+  components: { GithubIcon, MenuIcon }
+})
 export default class Navbar extends Vue {}
 </script>
 
@@ -67,6 +75,12 @@ export default class Navbar extends Vue {}
 
 .nav-link:hover {
   transition: all 0.3s ease 0s;
+}
+
+svg.feather {
+  margin-top: -4px;
+  vertical-align: middle;
+  width: 45px;
 }
 
 @media only screen and (max-width: 850px) {
